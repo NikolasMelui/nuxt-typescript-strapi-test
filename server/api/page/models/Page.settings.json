@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "page",
+  "info": {
+    "name": "page",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "type": "string"
+    },
+    "_slug": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

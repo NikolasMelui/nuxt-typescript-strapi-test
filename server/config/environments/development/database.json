@@ -1,0 +1,21 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "elkycluster-i0px6.mongodb.net",
+        "port": 27017,
+        "database": "elky_db",
+        "username": "elky_db_manager",
+        "password": "elkydbmanagerWAT543pass",
+        "srv": true
+      },
+      "options": {
+        "authenticationDatabase": "admin",
+        "ssl": true
+      }
+    }
+  }
+}
