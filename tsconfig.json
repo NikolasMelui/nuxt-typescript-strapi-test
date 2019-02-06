@@ -13,8 +13,10 @@
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "baseUrl": ".",
+    "outDir": "compiled",
     "paths": {
       "~/*": ["./*"]
     }
-  }
+  },
+  "exclude": ["node_modules"]
 }

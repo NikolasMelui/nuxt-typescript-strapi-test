@@ -1,25 +1,20 @@
 export * from './state';
 
-export interface Person {
+export interface Page {
   id: number;
-  first_name: string;
-  last_name: string;
-  contact: Contact;
-  gender: string;
-  ip_address: string;
-  avatar: string;
-  address: Address;
+  _slug: string;
+  title: string;
+  description: string;
 }
 
-export interface Contact {
-  email: string;
+export interface Post {
+  id: number;
+  _slug: string;
+  title: string;
+  description: string;
   phone: string;
 }
 
-export interface Address {
-  city: string;
-  country: string;
-  postalCode: string;
-  state: string;
-  street: string;
+export interface Project {
+  id: number;
 }

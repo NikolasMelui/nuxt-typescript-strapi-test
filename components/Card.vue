@@ -1,28 +1,27 @@
 <template>
   <div class="card">
-    <h2> </h2>
-    <img :src="'https://robohash.org/' + person.first_name + '_' + person.last_name" />
+    <h2></h2>
+    <img :src="`pageId_${page.id},postId_${post.id},projectId_${project.id}`">
   </div>
 </template>
 
 <script lang="ts">
-import {
-  Component,
-  Prop,
-  Vue
-} from "nuxt-property-decorator"
-import { Person } from "~/types";
+import { Component, Prop, Vue } from "nuxt-property-decorator";
+import { Page } from "~/types";
+import { Post } from "~/types";
+import { Project } from "~/types";
 
 @Component({})
 export default class Card extends Vue {
-  @Prop() person: Person
+  @Prop() page: Page;
+  @Prop() post: Post;
+  @Prop() project: Project;
 }
 </script>
 
 <style scoped>
 .card {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana,
-    sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 1rem;
   margin: 0.25rem;
   border: 0.25rem solid gainsboro;
