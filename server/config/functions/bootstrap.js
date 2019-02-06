@@ -1,5 +1,9 @@
 'use strict';
 
+const dotenv = require('dotenv');
+
+dotenv.config();
+
 /**
  * An asynchronous bootstrap function that runs before
  * your application gets started.

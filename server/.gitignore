@@ -95,6 +95,11 @@ results
 node_modules
 .node_history
 
+############################
+# DOTENV
+############################
+
+.env
 
 ############################
 # Tests
@@ -102,3 +107,9 @@ node_modules
 
 testApp
 coverage
+
+############################
+# mysecretsecrets
+############################
+
+secrets.json

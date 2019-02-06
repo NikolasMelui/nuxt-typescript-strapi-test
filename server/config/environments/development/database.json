@@ -5,11 +5,11 @@
       "connector": "strapi-hook-mongoose",
       "settings": {
         "client": "mongo",
-        "host": "elkycluster-i0px6.mongodb.net",
+        "host": "${process.env.DB_HOST}",
+        "database": "${process.env.DB_DATABASE}",
         "port": 27017,
-        "database": "elky_db",
-        "username": "elky_db_manager",
-        "password": "elkydbmanagerWAT543pass",
+        "username": "${process.env.DB_USER}",
+        "password": "${process.env.DB_PASSWORD}",
         "srv": true
       },
       "options": {
