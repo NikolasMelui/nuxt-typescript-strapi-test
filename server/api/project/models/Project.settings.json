@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "project",
   "info": {
     "name": "project",
     "description": ""
@@ -16,6 +16,14 @@
     "description": {
       "default": "",
       "type": "string"
+    },
+    "_slug": {
+      "default": "",
+      "maxLength": 20,
+      "unique": true,
+      "minLength": 3,
+      "type": "string",
+      "required": true
     }
   }
 }
