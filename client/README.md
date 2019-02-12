@@ -1,6 +1,6 @@
-# nuxt-typescript-test
+# client
 
-> Nuxt.js TypeScript project
+> Elky client
 
 ## Build Setup
 
